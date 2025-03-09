@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(7, 7, 36);
+    color: white;
+    
+}
+.container{
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+.container label{
+    background: white;
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    height: 40px;
+    padding: 7px;
+    border-radius: 5px;
+}
+.container label input{
+    height: 30px;
+}
+.btn{
+    margin-left:50%;
+    padding: 20px 20px;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 8px;
+    background: #8f05ff;
+    box-shadow: 0 0 25px #8f05ff;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.alert{
+    width: 400px;
+    height: 150px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    border: 2px solid rgb(88, 255, 4);
+   visibility: hidden;
+   transition:top 0.5s;
+}
+.alert-open{
+    visibility: visible;
+    top: 20%;
+    transform: translate(-50%,-50%)scale(1);
+
+}
+.alert img{
+    width:15%;
+    margin-top: -30px;
+    border-radius: 50%;
+    background-color: rgb(88, 255, 4);
+    box-shadow: 0 2px 5px rgb(12, 255, 12);
+}
+.alert h3{
+    font-size: 22px;
+    margin: 5px;
+}
+.alert label{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 5px;
+    color: black;
+}
+.alert button{
+    width: 80%;
+    margin-top: 15px;
+    padding: 5px 0;
+    background-color: rgb(88, 255, 4);
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow:0 5px 5px rgb(88, 255, 4);
+}

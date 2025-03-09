@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Stylish Addition Calci</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+  <body>
+    <div class="container">
+      <h1>Stylish Addition Calci</h1><br><br>
+    <label>Number 1 : <input type="number" id="num1" placeholder="Enter Here"></label><br><br>
+    <label>Number 2 : <input type="number" id="num2" placeholder="Enter Here"></label>
+    <br><br>
+    <button id="result" onclick="add()" class="btn"><b><i>Add</i></b></button>
+    </div>
+    <div class="alert" id="alert">
+      <img src="images/plus.png">
+      <h3 style="color: black;">The Answer is </h3>
+      <label id="ans"></label><br>
+      <button onclick="close()">OK</button>
+    </div>
+    
+    <script src="main.js"></script>
+
+  </body>
+</html>
